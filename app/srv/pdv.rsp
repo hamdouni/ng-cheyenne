@@ -12,7 +12,7 @@
 	    ]
 	]
 
-	res: do-sql 'esca {select pv_id,pv_nom from pdv limit 100}
+	res: do-sql 'esca {select pv_id,pv_nom from pdv limit 20}
 	json: "["
 	foreach item res [
 		append json rejoin ["{" {"id":"} escape form item/1 {","nom":"} escape form item/2 {"} "},"]
