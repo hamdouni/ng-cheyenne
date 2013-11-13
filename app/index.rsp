@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title>Angular-Cheyenne</title>
+</head>
+<body ng-app>
+<h1>Angular-Cheyenne</h1>
+
+<div ng-controller="PdvCtrl">
+	<input type="text" ng-model="name"/>
+	<p>status : {{status}}</p>
+	<ul>
+		<li ng-repeat="pdv in pdvs | filter:name"> {{pdv.id}} : {{pdv.nom}} </li>
+	</ul>
+</div>
+
+
+<script type="text/javascript" src="lib/angular.min.js"></script>
+<script type="text/javascript" src="lib/angular-resource.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

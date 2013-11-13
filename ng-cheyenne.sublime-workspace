@@ -1,0 +1,305 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"email",
+				"email-confirm"
+			],
+			[
+				"pd",
+				"pdv-id"
+			],
+			[
+				"cont",
+				"content"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 96.0,
+		"selected_items":
+		[
+			[
+				"Snippet: re",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"Snippet: ",
+				"Snippet: html"
+			],
+			[
+				"Snippet: he",
+				"Snippet: Header"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: i",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Discover Packages"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/hamdouni/src/ng-cheyenne/httpd.cfg",
+		"/home/hamdouni/Dropbox/Commercial/Clients/Prestalliance/prestalliance-fw.txt",
+		"/home/hamdouni/src/ng-cheyenne/app/srv/pdv.rsp",
+		"/home/hamdouni/src/ng-cheyenne/app/app.js",
+		"/home/hamdouni/src/ng-cheyenne/app/index.rsp",
+		"/tmp/squid.2.acl",
+		"/tmp/squid.conf",
+		"/home/hamdouni/src/ng-cheyenne/lib/json.r",
+		"/home/hamdouni/src/ng-cheyenne/index.rsp",
+		"/media/hamdouni/SAUVEGARDE/hamdouni/Dropbox/Commercial/Clients/Prestalliance/iptables",
+		"/media/hamdouni/SAUVEGARDE/hamdouni/Dropbox/Commercial/Clients/Prestalliance/prestalliance-fw.txt",
+		"/home/hamdouni/tst/cheyenne/httpd.cfg",
+		"/home/hamdouni/src/ANDES/src/escarcelle.net/ng/v1/app-init.r",
+		"/home/hamdouni/tst/cheyenne/trace-8000.log",
+		"/home/hamdouni/src/ANDES/src/escarcelle.net/ng/v1/private/db-abstract.r",
+		"/home/hamdouni/src/ANDES/src/escarcelle.net/ng/v1/private/ws-db-abstract.r",
+		"/home/hamdouni/src/ANDES/src/escarcelle.net/ng/v1/ws-list-data.rsp",
+		"/home/hamdouni/src/ANDES/src/escarcelle.net/ng/v1/ws-login.rsp",
+		"/home/hamdouni/Dropbox/Compta/Banque/infos.txt",
+		"/home/hamdouni/src/ANDES/src/escarcelle.net/pdv/private/db-abstract.r",
+		"/home/hamdouni/.gvfs/sftp:host=freebox.softinnov.fr,port=443,user=si/etc/crontab",
+		"/home/hamdouni/Downloads/readme.txt",
+		"/home/hamdouni/src/ANDES/src/escarcelle.net/pdv/stock.rsp",
+		"/home/hamdouni/src/ANDES/src/escarcelle.net/pdv/commandes.rsp",
+		"/home/hamdouni/src/ANDES/src/escarcelle.net/pdv/edit-produit.rsp",
+		"/home/hamdouni/Downloads/portable_settings.txt",
+		"/home/hamdouni/src/ANDES/src/escarcelle.net/pdv/produits.rsp",
+		"/home/hamdouni/src/ANDES/src/escarcelle.net/ng/v0/private/db-abstract.r",
+		"/home/hamdouni/src/ANDES/src/escarcelle.net/caisse/ws-get-ticket-id.rsp",
+		"/home/hamdouni/src/ANDES/src/escarcelle.net/caisse/private/ws-db-abstract.r",
+		"/home/hamdouni/src/ANDES/src/escarcelle.net/caisse/private/db-abstract.r",
+		"/home/hamdouni/src/ANDES/src/escarcelle.net/caisse/ws-sync-ticket.rsp",
+		"/home/hamdouni/src/ANDES/src/escarcelle.net/caisse/ws-send-ticket.rsp",
+		"/home/hamdouni/src/ANDES/src/escarcelle.net/pdv/cmd-livraison.rsp",
+		"/home/hamdouni/src/ANDES/src/escarcelle.net/pdv/bug.rsp",
+		"/home/hamdouni/src/ANDES/src/escarcelle.net/admin-panel/sql.rsp",
+		"/home/hamdouni/src/ANDES/src/escarcelle.net/pdv/ajout-reception.rsp",
+		"/home/hamdouni/tst/cheyenne/libs/mysql-protocol.r",
+		"/home/hamdouni/src/ANDES/src/escarcelle.net/admin-panel/benchmark.rsp",
+		"/home/hamdouni/Desktop/Windows 7 Genuine Activation RemoveWAT 2.2.6.0 NLT-Release/The Sorcerer's Apprentice[2010]DvDrip[Eng]-FXG/The Sorcerer's Apprentice[Eng][Subs].srt",
+		"/home/hamdouni/.xinitrc",
+		"/home/hamdouni/src/ANDES/src/escarcelle.net/admin-panel/app-init.r",
+		"/home/hamdouni/src/ANDES/src/escarcelle.net/pdv/edit-atelier.rsp",
+		"/home/hamdouni/src/ANDES/src/escarcelle.net/admin-panel/activite.rsp",
+		"/home/hamdouni/src/ANDES/src/escarcelle.net/pdv/mvt.rsp",
+		"/home/hamdouni/src/ANDES/src/escarcelle.net/pdv/private/infocentre.r",
+		"/home/hamdouni/src/ANDES/src/escarcelle.net/pdv/exec-stat.rsp",
+		"/home/hamdouni/src/ANDES/src/escarcelle.net/pdv/services/stock-remove.rsp",
+		"/home/hamdouni/src/ANDES/src/escarcelle.net/pdv/reception-detail.rsp",
+		"/home/hamdouni/Dropbox/Divers/maps/test-geochart.html",
+		"/home/hamdouni/tst/maps/test-geochart.html",
+		"/home/hamdouni/tst/maps/test.html",
+		"/home/hamdouni/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/hamdouni/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
+		"/home/hamdouni/src/ANDES/src/escarcelle.net/css/escarcelle.css",
+		"/home/hamdouni/test-maps.html",
+		"/home/hamdouni/src/ANDES/src/escarcelle.net/pdv/public/escarcelle.css~",
+		"/home/hamdouni/.config/sublime-text-2/Packages/Package Control/Package Control.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"escape",
+			"app-init",
+			"msgbox",
+			"cssHeaders",
+			"get-produit",
+			"search-produit",
+			"alert-dlc?",
+			"user-name",
+			"identify-user",
+			"exists-code-produit?",
+			"code-exists?",
+			"get-produit:",
+			"get-produit",
+			"update-produit",
+			"update-produit ",
+			"code",
+			"add-panier",
+			"panier",
+			"list-panier",
+			"add-panier",
+			"panier",
+			"list-panier",
+			"etat-stock",
+			"item",
+			"qté",
+			"ws-send-ticket",
+			"create-ticket",
+			"get-ticket-id",
+			"confirm-liv",
+			"get-ticket-id",
+			"err",
+			"'do-sql",
+			"do-sql",
+			"do-sql:",
+			"set do-sql",
+			"do-sql",
+			"sql-do",
+			"sql",
+			"do-sql",
+			"timeout",
+			"do-sql:",
+			"with-last-id:",
+			"lock table",
+			"pick [\" ASC\" \" DESC\"] positive? ord comma]",
+			"pick #",
+			"positive?",
+			"list-mvts",
+			"??",
+			"debug",
+			"cmt",
+			" raison",
+			"raison",
+			"params:",
+			"[DEBUG]",
+			"SELECT l_id,l_libelle FROM libelle WHERE l_cat=? ORDER BY l_id",
+			"enum",
+			"enum-cat",
+			"SELECT l_id,l_libelle FROM libelle WHERE l_cat=? ORDER BY l_id",
+			"add-reception-line",
+			"img/",
+			"bg.jpg"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"images/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 169.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"edit-produ",
+				"pdv/edit-produit.rsp"
+			],
+			[
+				"produit",
+				"pdv/produits.rsp"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/home/hamdouni/escarcelle-caisse.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 251.0,
+	"status_bar_visible": true
+}

@@ -1,0 +1,22 @@
+<%
+	response/set-header 'content-type "application/json"
+
+	escape: use [mp ch es encode][
+	    mp: [#"^/" "\n" #"^M" "\r" #"^-" "\t" #"^"" "\^"" #"\" "\\" #"/" "\/"]
+	    ch: complement es: charset extract mp 2
+	    encode: func [here][change/part here select mp here/1 1]
+
+	    func [txt][
+	        parse/all txt [any [txt: some ch | es (txt: encode txt) :txt]]
+	        head txt
+	    ]
+	]
+
+	res: do-sql 'esca {select pv_id,pv_nom from pdv limit 100}
+	json: "["
+	foreach item res [
+		append json rejoin ["{" {"id":"} escape form item/1 {","nom":"} escape form item/2 {"} "},"]
+	]
+	json: head remove back tail json
+	append json "]"
+%><%=json%>
