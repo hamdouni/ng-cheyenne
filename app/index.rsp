@@ -8,10 +8,13 @@
 <h1>Angular-Cheyenne</h1>
 
 <div ng-controller="PdvCtrl">
-	<input type="text" ng-model="name"/>
+	<form ng-submit="search()">
+		<input type="text" ng-model="name" placeholder="Enter name" />
+		<button type="submit">search</button>
+	</form>
 	<p>status : {{status}}</p>
 	<ul>
-		<li ng-repeat="pdv in pdvs | filter:name"> {{pdv.id}} : {{pdv.nom}} </li>
+		<li ng-repeat="pdv in pdvs"> {{pdv.pv_id}} : {{pdv.pv_nom}} </li>
 	</ul>
 </div>
 

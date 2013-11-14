@@ -12,11 +12,37 @@
 	    ]
 	]
 
-	res: do-sql 'esca {select pv_id,pv_nom from pdv limit 20}
-	json: "["
-	foreach item res [
-		append json rejoin ["{" {"id":"} escape form item/1 {","nom":"} escape form item/2 {"} "},"]
+	do-sql-json: func[db_name [word!] db_query [string! block!] /local json err db-error res idx port item column] [
+		db-error: none		
+			
+		json: "["
+		if error? err: try [res: do-sql db_name db_query][res: none db-error: disarm err]
+		if res [
+			port: do-sql/info to-word db_name db_query
+			foreach item res [
+				idx: 1
+				append json "{"
+				foreach column reduce port/locals/columns [
+					append json rejoin [{"} column/name {":"} escape form pick item idx {",}]
+					idx: idx + 1
+				]
+				json: head remove back tail json
+				append json "},"
+			]
+		]
+		json: head remove back tail json
+		append json "]"
+	?? db-error
+		json
 	]
-	json: head remove back tail json
-	append json "]"
+
+	validate [
+		name string!
+	]
+	name: request/content/name
+
+?? name
+
+	json: do-sql-json 'esca [{select pv_id,pv_nom from pdv where pv_nom like ?} name]
+
 %><%=json%>
