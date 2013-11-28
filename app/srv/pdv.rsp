@@ -32,7 +32,6 @@
 		]
 		json: head remove back tail json
 		append json "]"
-	?? db-error
 		json
 	]
 
@@ -40,8 +39,6 @@
 		name string!
 	]
 	name: request/content/name
-
-?? name
 
 	json: do-sql-json 'esca [{select pv_id,pv_nom from pdv where pv_nom like ?} name]
 

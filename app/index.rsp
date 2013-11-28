@@ -5,6 +5,7 @@
 	<title>Angular-Cheyenne</title>
 </head>
 <body ng-app>
+
 <h1>Angular-Cheyenne</h1>
 
 <div ng-controller="PdvCtrl">
@@ -13,9 +14,18 @@
 		<button type="submit">search</button>
 	</form>
 	<p>status : {{status}}</p>
-	<ul>
-		<li ng-repeat="pdv in pdvs"> {{pdv.pv_id}} : {{pdv.pv_nom}} </li>
-	</ul>
+	<table>
+		<thead>
+			<tr>
+				<th><input type="text" ng-model="critere.pv_id" placeholder="id"/></th>
+				<th><input ng-model="critere.pv_nom" placeholder="nom"/></th>
+				<th><button ng-click="reset()">RESET</button></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="pdv in pdvs | filter:critere"><td> {{pdv.pv_id}} </td><td> {{pdv.pv_nom}} </td></tr>
+		</tbody>
+	</table>
 </div>
 
 

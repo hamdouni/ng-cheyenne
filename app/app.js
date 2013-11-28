@@ -1,6 +1,4 @@
 function PdvCtrl($scope,$http) {
-	$scope.pdvs = [{ 'id':'1','nom':'Epicerie ANDES'},{ 'id':'2','nom':'Au Marché Conté'},{ 'id':'3','nom':'A.I.R.E.S. '}];
-
 	$scope.search = function() {
 		$http({
 			method: 'GET',
@@ -15,5 +13,8 @@ function PdvCtrl($scope,$http) {
 			$scope.status = status;
 		});
 	}
-
+	$scope.reset = function() {
+		$scope.critere.pv_id = "";
+		$scope.critere.pv_nom = "";
+	}
 }
