@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8915-1"/>
+	<title>Angular-Cheyenne</title>
+</head>
+<body ng-app>
+
+<%	do %htmlControlCases.r
+
+	if validate/full [id integer! *][
+		response/redirect "epiceries.rsp"
+	]
+	
+	params: request/content
+
+
+	model: [
+		nom				string!		*
+		statut			integer! 	*
+		statut_autre 	string!		-
+		andes			logic!		-
+		expire			date!		-
+		cmt				string!		-
+		EPid			integer!	-
+		EPligne1		string!		-
+		EPligne2		string!		-
+		EPcp			string!		*
+		EPville			string!		*
+		EPtel			string!		*
+		EPfax			string!		-
+		EPemail			string!		*
+		EPweb			string!		-
+	]
+
+	invalid: validate/full model
+
+; ### FAKE DATA ####
+	pdv: [
+		nom 			"Épicerie"
+		statut 			"Association"
+		statut_autre	none
+		EPid			100
+		andes 			true
+		cmt 			""
+		EPligne1 		"1 rue des dames"
+		EPligne2 		""
+		EPcp 			75001
+		EPville 		"Paris"
+		EPtel 			"0102030405"
+		EPfax 			"0102030405"
+		EPemail 		"allo@asso.fr"
+		EPweb 			"www.nullepart.fr"
+		expire 			01/12/2014
+	]
+	enum-cat: func[id][
+		[1 "asso" 2 "pas asso"]
+	]
+; ### END FAKE DATA ####
+
+
+%>
+
+<% 	foreach [name type status] model [
+		control: do select htmlControlCases type
+		print control name pdv/:name
+	]
+%>
+
+
+</body>
+</html>
