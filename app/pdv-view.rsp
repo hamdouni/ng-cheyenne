@@ -7,39 +7,34 @@
 <body ng-app>
 
 <%	do %htmlControlCases.r
-
-	if validate/full [id integer! *][
-		response/redirect "epiceries.rsp"
-	]
 	
 	params: request/content
 
+	all-statut: func [][ return  [ 0 "SARL" 1 "Association" 2 "Autre" ]]
 
 	model: [
-		nom				string!		*
-		statut			integer! 	*
-		statut_autre 	string!		-
-		andes			logic!		-
-		expire			date!		-
-		cmt				string!		-
-		EPid			integer!	-
-		EPligne1		string!		-
-		EPligne2		string!		-
-		EPcp			string!		*
-		EPville			string!		*
-		EPtel			string!		*
-		EPfax			string!		-
-		EPemail			string!		*
-		EPweb			string!		-
+		nom				string!		*	-
+		statut			list!	 	*	all-statut
+		statut_autre 	string!		-	-
+		andes			logic!		-	-
+		expire			date!		-	-
+		cmt				string!		-	-
+		EPid			integer!	-	-
+		EPligne1		string!		-	-
+		EPligne2		string!		-	-
+		EPcp			string!		*	-
+		EPville			string!		*	-
+		EPtel			string!		*	-
+		EPfax			string!		-	-
+		EPemail			string!		*	-
+		EPweb			string!		-	-
 	]
 
-	invalid: validate/full model
-
-; ### FAKE DATA ####
+	; ### FAKE DATA ####
 	pdv: [
 		nom 			"Épicerie"
-		statut 			"Association"
-		statut_autre	none
+		statut 			1
+		statut_autre	""
 		EPid			100
 		andes 			true
 		cmt 			""
@@ -53,19 +48,10 @@
 		EPweb 			"www.nullepart.fr"
 		expire 			01/12/2014
 	]
-	enum-cat: func[id][
-		[1 "asso" 2 "pas asso"]
-	]
-; ### END FAKE DATA ####
-
-
+	; ### END FAKE DATA ####
 %>
 
-<% 	foreach [name type status] model [
-		control: do select htmlControlCases type
-		print control name pdv/:name
-	]
-%>
+<% update-form model pdv %>
 
 
 </body>
